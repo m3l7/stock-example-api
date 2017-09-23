@@ -1,0 +1,19 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  "apps" : [
+
+    {
+      "name"      : "HTTP API",
+      "script"    : "release/js/bin/httpApi.js",
+      "log_date_format": "YYYY-MM-DD HH:mm"
+    },
+    {
+      "name"      : "DOC server",
+      "script"    : "release/js/bin/apiDocs.js",
+      "log_date_format": "YYYY-MM-DD HH:mm"
+    }
+  ]
+}
