@@ -66,11 +66,8 @@ The docs are compiled into docs/ folder and they can be served with
 
     node release/js/bin/apiDocs.js
 
-## Tests
 
-configure `config/test.json` (recommended) or use the `config/default.json`. Run the tests with:
 
-    npm run test
 
 ## Config files
 
@@ -79,6 +76,25 @@ Deploy specific configs are stored in `config/default.json` and `config/{{env}}.
 They are read using config.js library.
 
 The schema and the default config can be found in `src/core/config.ts`
+
+## Tests
+
+Some basic e2e tests are included. Run them with:
+
+    npm run test
+
+It is possible to change some variables for the test environment only (i.e. port, log level) by editing/creating `config/test.json`, i.e.:
+
+    {
+        "api":{
+            "port": 17011,
+            "log": {
+                "http": false,
+                "error": true,
+                "level": "info"
+            }
+        }
+    }
     
 # Project Structure
 
