@@ -21,12 +21,12 @@ export class RouterFactory {
      * @memberOf Router
      */
     public expressRouter: express.Router;
-    constructor(private _userRoute: StockRoute) {
+    constructor(private _stockRoute: StockRoute) {
 
         let router = express.Router(); // create a new Router
 
         // setup the routes
-        this._userRoute.setupRoutes(router);
+        this._stockRoute.setupRoutes(router);
 
         this.expressRouter = router;
     }

@@ -25,7 +25,7 @@ export class StockController {
      * @param {any} res
      * @param {any} next
      *
-     * @memberOf UserController
+     * @memberOf StockController
      */
     findAllAction(req, res, next) {
         try {
