@@ -42,6 +42,10 @@ or using the build task in vscode
 
     node release/js/bin/httpApi.js
 
+### NPM
+
+    npm start
+
 ### PM2
 
     pm2 start ecosystem.json
