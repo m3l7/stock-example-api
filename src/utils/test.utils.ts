@@ -4,7 +4,6 @@ import { Db } from 'core/db';
 import { Api } from 'api/api';
 import * as configjs from 'config';
 import * as _ from 'lodash';
-import * as Bluebird from 'bluebird';
 
 export interface TestGlobals {
     db: Db;
