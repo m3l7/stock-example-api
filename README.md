@@ -66,7 +66,7 @@ The docs are compiled into docs/ folder and they can be served with
 
     node release/js/bin/apiDocs.js
 
-
+The default port is 16020 (override it by setting the PORT env variable)
 
 
 ## Config files
