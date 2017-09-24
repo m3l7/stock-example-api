@@ -71,7 +71,7 @@ export class StockController {
      */
     updateAction(req, res, next) {
         try {
-            let price = req.body.currentPrice;
+            let price = parseInt(req.body.currentPrice);
             let id = parseInt(req.params.id);
 
             let stock = this._db.models.Stock.updatePrice(id, price);
